@@ -48,19 +48,19 @@ class DatabaseConnection {
    */
   private setupEventHandlers(): void {
     // Handle connection errors
-    this.pool.on('error', (err, client) => {
+    this.pool.on('error', (err: Error) => {
       console.error('Unexpected error on idle client', err);
       // Don't exit the process, let the pool handle reconnection
     });
 
     // Handle successful connections
-    this.pool.on('connect', (client) => {
+    this.pool.on('connect', () => {
       this.isConnected = true;
       console.log('Database client connected');
     });
 
     // Handle connection removal
-    this.pool.on('remove', (client) => {
+    this.pool.on('remove', () => {
       console.log('Database client removed from pool');
     });
   }
