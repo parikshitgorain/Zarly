@@ -72,7 +72,7 @@ For EVERY task below:
     - Configure idle timeout and connection recycling
     - _Requirements: 18.7, 20.1_
 
-  - [ ] 2.2 Write unit tests for database connection pool
+  - [x] 2.2 Write unit tests for database connection pool
     - Test connection acquisition and release
     - Test connection pool exhaustion handling
     - Test connection error recovery
