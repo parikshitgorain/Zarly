@@ -1424,44 +1424,44 @@ For EVERY task below:
     - Include guild_id, event_type, user_id, channel_id, data, timestamp
     - _Requirements: 10.8_
 
-  - [ ] 28.2 Implement message logging
+  - [ ] 36.2 Implement message logging
     - Log message deletions with content, author, timestamp
     - Log message edits with before/after content
     - _Requirements: 10.1, 10.2_
 
-  - [ ] 28.3 Implement member and role logging
+  - [ ] 36.3 Implement member and role logging
     - Log member joins and leaves
     - Log role updates with before/after role lists
     - _Requirements: 10.3, 10.4_
 
-  - [ ] 28.4 Implement channel and voice logging
+  - [ ] 36.4 Implement channel and voice logging
     - Log channel create, update, delete events
     - Log voice state changes including channel transitions
     - _Requirements: 10.5, 10.6_
 
-  - [ ] 28.5 Implement command logging
+  - [ ] 36.5 Implement command logging
     - Log all command executions with user, timestamp, parameters
     - Track command success/failure
     - _Requirements: 10.7_
 
-  - [ ] 28.6 Implement log channel posting
+  - [ ] 36.6 Implement log channel posting
     - Send log messages to configured log channel in real-time
     - Format logs with embeds for readability
     - Include Case_ID references for moderation logs
     - _Requirements: 10.9, 10.11_
 
-  - [ ] 28.7 Implement log viewer API
+  - [ ] 36.7 Implement log viewer API
     - Create searchable log endpoint with filtering
     - Support filtering by event type, user, date range
     - Implement pagination
     - _Requirements: 10.10_
 
-  - [ ] 28.8 Implement log channel permission validation
+  - [ ] 36.8 Implement log channel permission validation
     - Validate configured log channel exists
     - Respect channel permissions
     - _Requirements: 10.12_
 
-  - [ ]* 28.9 Write unit tests for logging system
+  - [ ]* 36.9 Write unit tests for logging system
     - Test all event type logging
     - Test log channel posting
     - Test log filtering
@@ -1476,7 +1476,7 @@ For EVERY task below:
     - Set up dead-letter queue
     - _Requirements: 17.12_
 
-  - [ ] 29.2 Implement worker job processors
+  - [ ] 37.2 Implement worker job processors
     - Create processors for giveaway end timers
     - Create processors for auto-reroll timers
     - Create processors for scheduled messages
@@ -1485,33 +1485,33 @@ For EVERY task below:
     - Create processors for timed role expiration
     - _Requirements: 17.1, 17.2, 17.3, 17.4, 17.5, 17.6_
 
-  - [ ] 29.3 Implement retry logic with exponential backoff
+  - [ ] 37.3 Implement retry logic with exponential backoff
     - Configure retry attempts (max 3)
     - Implement exponential backoff (1s, 2s, 4s)
     - Move failed jobs to dead-letter queue after max retries
     - _Requirements: 17.7, 21.4_
 
-  - [ ]* 29.4 Write property test for worker retry with exponential backoff
+  - [ ]* 37.4 Write property test for worker retry with exponential backoff
     - **Property 29: Worker Job Retry with Exponential Backoff**
     - **Validates: Requirements 17.7, 21.4**
 
-  - [ ] 29.5 Implement job timeout guards
+  - [ ] 37.5 Implement job timeout guards
     - Set 30-second default timeout for all jobs
     - Handle timeout errors gracefully
     - Log timeout events
     - _Requirements: 17.9, 21.12_
 
-  - [ ] 29.6 Implement worker job logging
+  - [ ] 37.6 Implement worker job logging
     - Log all job executions with status, duration, error details
     - Track job success/failure rates
     - _Requirements: 17.10_
 
-  - [ ] 29.7 Implement concurrent job processing
+  - [ ] 37.7 Implement concurrent job processing
     - Configure concurrency limits per queue
     - Prevent resource exhaustion
     - _Requirements: 17.13_
 
-  - [ ]* 29.8 Write unit tests for worker system
+  - [ ]* 37.8 Write unit tests for worker system
     - Test job execution
     - Test retry logic
     - Test timeout handling
@@ -1526,44 +1526,44 @@ For EVERY task below:
     - Add validation to prevent malformed keys
     - _Requirements: 16.1_
 
-  - [ ] 30.2 Implement database query filtering
+  - [ ] 38.2 Implement database query filtering
     - Add guild_id filter to all queries
     - Create query builder helpers that enforce filtering
     - _Requirements: 16.2_
 
-  - [ ] 30.3 Implement cross-guild access prevention
+  - [ ] 38.3 Implement cross-guild access prevention
     - Validate guild ownership in all API endpoints
     - Validate guild context in all bot commands
     - _Requirements: 16.3, 16.4, 16.5_
 
-  - [ ]* 30.4 Write property test for guild data isolation
+  - [ ]* 38.4 Write property test for guild data isolation
     - **Property 3: Guild Data Isolation**
     - **Validates: Requirements 1.9, 16.4**
 
-  - [ ] 30.5 Implement shard-aware architecture
+  - [ ] 38.5 Implement shard-aware architecture
     - Distribute guilds across shards
     - Use shared Redis for cross-shard state
     - Use shared PostgreSQL with connection pooling
     - _Requirements: 16.6, 16.7, 16.8, 16.9_
 
-  - [ ] 30.6 Implement Redis pub/sub for cross-shard communication
+  - [ ] 38.6 Implement Redis pub/sub for cross-shard communication
     - Create pub/sub channels for config updates, premium updates
     - Subscribe all shards to relevant channels
     - Invalidate caches on updates
     - _Requirements: 16.6_
 
-  - [ ] 30.7 Implement security event logging
+  - [ ] 38.7 Implement security event logging
     - Log attempted cross-guild data access
     - Log failed permission checks
     - Alert on suspicious activity
     - _Requirements: 16.11, 19.10_
 
-  - [ ] 30.8 Implement AI data isolation
+  - [ ] 38.8 Implement AI data isolation
     - Isolate RAG embeddings per guild in pgvector
     - Prevent cross-guild information leakage
     - _Requirements: 16.12_
 
-  - [ ]* 30.9 Write unit tests for data isolation
+  - [ ]* 38.9 Write unit tests for data isolation
     - Test cross-guild access prevention
     - Test Redis key namespacing
     - Test database query filtering
@@ -1590,46 +1590,46 @@ For EVERY task below:
     - Don't crash on Redis unavailability
     - _Requirements: 21.1_
 
-  - [ ]* 32.2 Write property test for graceful Redis failure handling
+  - [ ]* 40.2 Write property test for graceful Redis failure handling
     - **Property 33: Graceful Redis Failure Handling**
     - **Validates: Requirements 21.1**
 
-  - [ ] 32.3 Implement graceful PostgreSQL failure handling
+  - [ ] 40.3 Implement graceful PostgreSQL failure handling
     - Catch database connection errors
     - Queue operations for retry
     - Return cached data if available
     - Log errors with stack traces
     - _Requirements: 21.2, 21.8_
 
-  - [ ] 32.4 Implement external API failure handling
+  - [ ] 40.4 Implement external API failure handling
     - Catch API call failures (Discord, AI, streaming platforms)
     - Return user-friendly error messages
     - Log errors with request details
     - _Requirements: 21.3, 21.5_
 
-  - [ ] 32.5 Implement Discord API rate limit handling
+  - [ ] 40.5 Implement Discord API rate limit handling
     - Respect rate limit headers
     - Retry after specified delay
     - Queue requests during rate limits
     - _Requirements: 21.6_
 
-  - [ ] 32.6 Implement circuit breakers for external services
+  - [ ] 40.6 Implement circuit breakers for external services
     - Track failure rates for AI service, streaming APIs
     - Open circuit after 5 consecutive failures
     - Close circuit after 60-second timeout
     - _Requirements: 21.7_
 
-  - [ ] 32.7 Implement critical error alerting
+  - [ ] 40.7 Implement critical error alerting
     - Send alerts to configured monitoring channels
     - Include error context and stack traces
     - _Requirements: 21.9_
 
-  - [ ] 32.8 Implement timeout guards for async operations
+  - [ ] 40.8 Implement timeout guards for async operations
     - Set 30-second default timeout
     - Handle timeout errors gracefully
     - _Requirements: 21.12_
 
-  - [ ]* 32.9 Write unit tests for error handling
+  - [ ]* 40.9 Write unit tests for error handling
     - Test Redis failure scenarios
     - Test database failure scenarios
     - Test external API failures
@@ -1645,42 +1645,42 @@ For EVERY task below:
     - Monitor connection usage
     - _Requirements: 18.7_
 
-  - [ ] 33.2 Implement Redis caching strategy
+  - [ ] 41.2 Implement Redis caching strategy
     - Cache guild configs with 5-minute TTL
     - Cache premium status with 5-minute TTL
     - Cache XP data with periodic sync
     - Implement cache invalidation on updates
     - _Requirements: 18.4, 18.6_
 
-  - [ ] 33.3 Implement XP batch updates
+  - [ ] 41.3 Implement XP batch updates
     - Batch XP updates to PostgreSQL every 5 minutes
     - Reduce database write load
     - _Requirements: 18.5_
 
-  - [ ] 33.4 Implement Redis TTL for temporary data
+  - [ ] 41.4 Implement Redis TTL for temporary data
     - Set TTL for cooldowns (60 seconds)
     - Set TTL for rate limits (variable)
     - Set TTL for giveaway claim timers (300 seconds)
     - Prevent memory bloat
     - _Requirements: 18.8_
 
-  - [ ] 33.5 Implement non-blocking worker execution
+  - [ ] 41.5 Implement non-blocking worker execution
     - Offload heavy operations to worker queue
     - Never block bot event loop
     - _Requirements: 18.9_
 
-  - [ ] 33.6 Implement performance monitoring
+  - [ ] 41.6 Implement performance monitoring
     - Track command response times
     - Track database query times
     - Track API endpoint response times
     - Log performance metrics
     - _Requirements: 18.12_
 
-  - [ ]* 33.7 Write property test for concurrent command handling
+  - [ ]* 41.7 Write property test for concurrent command handling
     - **Property 30: Concurrent Command Handling**
     - **Validates: Requirements 18.1**
 
-  - [ ]* 33.8 Write property test for command response time
+  - [ ]* 41.8 Write property test for command response time
     - **Property 31: Command Response Time**
     - **Validates: Requirements 18.3**
 
@@ -1693,23 +1693,23 @@ For EVERY task below:
     - Sanitize input before displaying in embeds
     - _Requirements: 19.12, 19.13_
 
-  - [ ] 34.2 Implement webhook signature validation
+  - [ ] 42.2 Implement webhook signature validation
     - Validate Twitch EventSub signatures
     - Validate YouTube WebSub signatures
     - Reject requests with invalid signatures
     - _Requirements: 19.11_
 
-  - [ ] 34.3 Implement HTTPS enforcement
+  - [ ] 42.3 Implement HTTPS enforcement
     - Enforce HTTPS for all dashboard communications
     - Redirect HTTP to HTTPS
     - _Requirements: 19.14_
 
-  - [ ] 34.4 Implement giveaway fraud prevention
+  - [ ] 42.4 Implement giveaway fraud prevention
     - Validate winner hasn't left guild
     - Revalidate role requirements before awarding
     - _Requirements: 19.15_
 
-  - [ ]* 34.5 Write unit tests for security controls
+  - [ ]* 42.5 Write unit tests for security controls
     - Test input sanitization
     - Test webhook signature validation
     - Test role hierarchy enforcement
@@ -1735,44 +1735,44 @@ For EVERY task below:
     - Configure test environment
     - _Requirements: 22.1, 22.2, 22.3, 22.4_
 
-  - [ ] 36.2 Create mock data standards
+  - [ ] 44.2 Create mock data standards
     - Create realistic mock guild, user, role data
     - Use structured identifiers
     - Create mock data generators
     - _Requirements: 22.17_
 
-  - [ ] 36.3 Write happy path tests for all features
+  - [ ] 44.3 Write happy path tests for all features
     - Test normal operation with valid inputs
     - Cover all major features
     - _Requirements: 22.5_
 
-  - [ ] 36.4 Write permission denied tests
+  - [ ] 44.4 Write permission denied tests
     - Test operations without required permissions
     - Test role hierarchy violations
     - _Requirements: 22.6_
 
-  - [ ] 36.5 Write invalid input tests
+  - [ ] 44.5 Write invalid input tests
     - Test malformed inputs
     - Test missing required fields
     - Test out-of-range values
     - _Requirements: 22.7_
 
-  - [ ] 36.6 Write rate limit tests
+  - [ ] 44.6 Write rate limit tests
     - Test exceeding configured rate limits
     - Test rate limit reset
     - _Requirements: 22.8_
 
-  - [ ] 36.7 Write concurrency tests
+  - [ ] 44.7 Write concurrency tests
     - Test simultaneous operations on same resources
     - Test race conditions
     - _Requirements: 22.15_
 
-  - [ ] 36.8 Write duplicate execution tests
+  - [ ] 44.8 Write duplicate execution tests
     - Test idempotency of worker jobs
     - Test duplicate prevention mechanisms
     - _Requirements: 22.16_
 
-  - [ ] 36.9 Verify test coverage meets requirements
+  - [ ] 44.9 Verify test coverage meets requirements
     - Ensure 90%+ line coverage
     - Ensure 90%+ branch coverage
     - Ensure 90%+ function coverage
@@ -1790,26 +1790,26 @@ For EVERY task below:
     - Optimize images for production
     - _Requirements: 18.11_
 
-  - [ ] 37.2 Create Docker Compose configuration
+  - [ ] 45.2 Create Docker Compose configuration
     - Configure all services (bot, api, worker, dashboard, redis, postgres)
     - Set up service dependencies
     - Configure environment variables
     - Set up volumes for data persistence
     - _Requirements: 18.11_
 
-  - [ ] 37.3 Create environment variable documentation
+  - [ ] 45.3 Create environment variable documentation
     - Document all required environment variables
     - Provide example .env file
     - Document configuration options
     - _Requirements: 18.11_
 
-  - [ ] 37.4 Create database migration scripts
+  - [ ] 45.4 Create database migration scripts
     - Create migration runner
     - Document migration process
     - Create rollback procedures
     - _Requirements: 20.1, 20.2_
 
-  - [ ] 37.5 Create deployment documentation
+  - [ ] 45.5 Create deployment documentation
     - Document deployment process
     - Document scaling procedures
     - Document monitoring setup
@@ -1826,26 +1826,26 @@ For EVERY task below:
     - Document error codes
     - _Requirements: Documentation Layer_
 
-  - [ ] 38.2 Create bot command documentation
+  - [ ] 46.2 Create bot command documentation
     - Document all slash commands
     - Include usage examples
     - Document required permissions
     - _Requirements: Documentation Layer_
 
-  - [ ] 38.3 Create architecture documentation
+  - [ ] 46.3 Create architecture documentation
     - Document system architecture
     - Document data flow
     - Document sharding strategy
     - Document caching strategy
     - _Requirements: Documentation Layer_
 
-  - [ ] 38.4 Create troubleshooting guide
+  - [ ] 46.4 Create troubleshooting guide
     - Document common issues and solutions
     - Document error messages
     - Document debugging procedures
     - _Requirements: Documentation Layer_
 
-  - [ ] 38.5 Create user guide for dashboard
+  - [ ] 46.5 Create user guide for dashboard
     - Document dashboard features
     - Include screenshots
     - Document configuration options
