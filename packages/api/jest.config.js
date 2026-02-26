@@ -9,9 +9,7 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/*.test.ts',
     '!src/**/*.spec.ts',
-    '!src/database/migrations/**',
-    '!src/config/database.config.ts', // Infrastructure code - requires integration tests
-    '!src/database/connection.ts', // Infrastructure code - requires integration tests
+    '!src/database/migrations/**', // SQL files, not TypeScript code
   ],
   coverageThreshold: {
     global: {
