@@ -58,7 +58,7 @@ For EVERY task below:
   - Set up environment variable management with dotenv
   - _Requirements: 16.1, 16.2, 18.7_
 
-- [ ]* 1.1 Write unit tests for project configuration
+- [ ] 1.1 Write unit tests for project configuration
   - Test environment variable loading
   - Test TypeScript compilation
   - _Requirements: 22.5_
@@ -72,7 +72,7 @@ For EVERY task below:
     - Configure idle timeout and connection recycling
     - _Requirements: 18.7, 20.1_
 
-  - [ ]* 2.2 Write unit tests for database connection pool
+  - [ ] 2.2 Write unit tests for database connection pool
     - Test connection acquisition and release
     - Test connection pool exhaustion handling
     - Test connection error recovery
@@ -118,7 +118,7 @@ For EVERY task below:
     - Add all necessary indexes and foreign keys
     - _Requirements: 8.1, 8.7, 11.3, 11.5, 15.8, 20.1_
 
-  - [ ]* 2.9 Write migration rollback tests
+  - [ ] 2.9 Write migration rollback tests
     - Test forward and rollback migrations for all tables
     - Verify data integrity after rollback
     - Test migration version tracking
@@ -133,7 +133,7 @@ For EVERY task below:
     - Add health check functionality
     - _Requirements: 18.6, 21.1_
 
-  - [ ]* 3.2 Write unit tests for Redis client
+  - [ ] 3.2 Write unit tests for Redis client
     - Test connection establishment and failure handling
     - Test reconnection logic
     - Simulate Redis unavailability
@@ -145,7 +145,7 @@ For EVERY task below:
     - Add key validation to prevent cross-guild leakage
     - _Requirements: 16.1, 18.8_
 
-  - [ ]* 3.4 Write property test for Redis key naming convention
+  - [ ] 3.4 Write property test for Redis key naming convention
     - **Property 27: Redis Key Naming Convention**
     - **Validates: Requirements 16.1**
 
@@ -154,7 +154,7 @@ For EVERY task below:
     - Use sliding window algorithm for accurate rate limiting
     - _Requirements: 18.10, 19.8_
 
-  - [ ]* 3.6 Write property test for rate limiting
+  - [ ] 3.6 Write property test for rate limiting
     - **Property 21: Rate Limiting Enforcement**
     - **Validates: Requirements 8.3, 13.2**
 
@@ -177,7 +177,7 @@ For EVERY task below:
     - Add shard event handlers for ready, error, disconnect
     - _Requirements: 1.10, 16.6_
 
-  - [ ]* 5.2 Write unit tests for shard management
+  - [ ] 5.2 Write unit tests for shard management
     - Test shard spawn and distribution
     - Test shard failure handling
     - _Requirements: 22.17_
@@ -188,15 +188,15 @@ For EVERY task below:
     - Prevent self-targeting and owner targeting
     - _Requirements: 1.3, 1.4, 1.6, 1.7, 3.9, 19.1, 19.2, 19.3_
 
-  - [ ]* 5.4 Write property test for role hierarchy enforcement
+  - [ ] 5.4 Write property test for role hierarchy enforcement
     - **Property 1: Role Hierarchy Enforcement**
     - **Validates: Requirements 1.4, 3.9, 19.1**
 
-  - [ ]* 5.5 Write property test for self-targeting prevention
+  - [ ] 5.5 Write property test for self-targeting prevention
     - **Property 2: Self-Targeting Prevention**
     - **Validates: Requirements 1.6**
 
-  - [ ]* 5.6 Write property test for permission validation
+  - [ ] 5.6 Write property test for permission validation
     - **Property 5: Permission Validation Before Execution**
     - **Validates: Requirements 1.3**
 
@@ -206,7 +206,7 @@ For EVERY task below:
     - Add 5-minute TTL for cached configs
     - _Requirements: 1.8, 18.4_
 
-  - [ ]* 5.8 Write property test for configuration caching
+  - [ ] 5.8 Write property test for configuration caching
     - **Property 4: Configuration Caching**
     - **Validates: Requirements 1.8**
 
@@ -226,7 +226,7 @@ For EVERY task below:
     - Return permission denied errors with clear messages
     - _Requirements: 1.3, 1.4, 1.5_
 
-  - [ ]* 6.3 Write unit tests for command permission validation
+  - [ ] 6.3 Write unit tests for command permission validation
     - Test permission denied scenarios
     - Test role hierarchy validation
     - Test bot permission checks
@@ -257,7 +257,7 @@ For EVERY task below:
     - Add 60-second TTL for frequency data
     - _Requirements: 2.1, 2.9_
 
-  - [ ]* 8.2 Write property test for spam detection
+  - [ ] 8.2 Write property test for spam detection
     - **Property 6: AutoMod Spam Detection**
     - **Validates: Requirements 2.1**
 
@@ -266,7 +266,7 @@ For EVERY task below:
     - Compare against configurable threshold (default 0.70)
     - _Requirements: 2.2_
 
-  - [ ]* 8.4 Write property test for caps ratio detection
+  - [ ] 8.4 Write property test for caps ratio detection
     - **Property 7: AutoMod Caps Ratio Detection**
     - **Validates: Requirements 2.2**
 
@@ -281,7 +281,7 @@ For EVERY task below:
     - Apply regex matching to message content
     - _Requirements: 2.5_
 
-  - [ ]* 8.7 Write property test for pattern matching
+  - [ ] 8.7 Write property test for pattern matching
     - **Property 8: AutoMod Pattern Matching**
     - **Validates: Requirements 2.5**
 
@@ -297,7 +297,7 @@ For EVERY task below:
     - Ensure actions complete within 200ms
     - _Requirements: 2.7, 2.8_
 
-  - [ ]* 8.10 Write property test for AutoMod response time
+  - [ ] 8.10 Write property test for AutoMod response time
     - **Property 9: AutoMod Response Time**
     - **Validates: Requirements 2.8**
 
@@ -310,7 +310,7 @@ For EVERY task below:
     - Store cases in PostgreSQL with moderator tracking
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.7_
 
-  - [ ]* 9.2 Write property test for unique case ID generation
+  - [ ] 9.2 Write property test for unique case ID generation
     - **Property 10: Unique Case ID Generation**
     - **Validates: Requirements 3.1, 3.5**
 
@@ -320,7 +320,7 @@ For EVERY task below:
     - Store logs in event_logs table
     - _Requirements: 3.6, 3.8, 10.11_
 
-  - [ ]* 9.4 Write unit tests for moderation actions
+  - [ ] 9.4 Write unit tests for moderation actions
     - Test warn, timeout, kick, ban execution
     - Test permission denied scenarios
     - Test role hierarchy enforcement
@@ -335,7 +335,7 @@ For EVERY task below:
     - Calculate appropriate punishment level based on warning count
     - _Requirements: 4.3, 4.5, 4.6_
 
-  - [ ]* 10.2 Write property test for escalation threshold calculation
+  - [ ] 10.2 Write property test for escalation threshold calculation
     - **Property 11: Escalation Threshold Calculation**
     - **Validates: Requirements 4.3**
 
@@ -350,11 +350,11 @@ For EVERY task below:
     - Synchronize with PostgreSQL on updates
     - _Requirements: 4.9_
 
-  - [ ]* 10.5 Write property test for offense count consistency
+  - [ ] 10.5 Write property test for offense count consistency
     - **Property 12: Offense Count Consistency**
     - **Validates: Requirements 4.9**
 
-  - [ ]* 10.6 Write unit tests for warning decay
+  - [ ] 10.6 Write unit tests for warning decay
     - Test expiration calculation
     - Test decay worker execution
     - _Requirements: 22.11_
@@ -387,11 +387,11 @@ For EVERY task below:
     - Check blacklist before accepting entry
     - _Requirements: 6.2, 6.3, 6.4, 6.5, 6.19_
 
-  - [ ]* 12.3 Write property test for duplicate entry prevention
+  - [ ] 12.3 Write property test for duplicate entry prevention
     - **Property 13: Giveaway Duplicate Entry Prevention**
     - **Validates: Requirements 6.5**
 
-  - [ ]* 12.4 Write unit tests for entry validation
+  - [ ] 12.4 Write unit tests for entry validation
     - Test role requirement validation
     - Test level requirement validation
     - Test account age validation
@@ -418,7 +418,7 @@ For EVERY task below:
     - Post announcement with claim button
     - _Requirements: 6.6, 6.7, 6.14, 6.15_
 
-  - [ ]* 13.2 Write property test for winner selection validity
+  - [ ] 13.2 Write property test for winner selection validity
     - **Property 14: Giveaway Winner Selection Validity**
     - **Validates: Requirements 6.6**
 
@@ -436,11 +436,11 @@ For EVERY task below:
     - Stop rerolling when maximum limit reached
     - _Requirements: 6.10, 6.11, 6.12, 6.13, 6.16_
 
-  - [ ]* 13.5 Write property test for auto-reroll exclusion
+  - [ ] 13.5 Write property test for auto-reroll exclusion
     - **Property 15: Giveaway Auto-Reroll Exclusion**
     - **Validates: Requirements 6.11**
 
-  - [ ]* 13.6 Write property test for maximum reroll limit
+  - [ ] 13.6 Write property test for maximum reroll limit
     - **Property 16: Giveaway Maximum Reroll Limit**
     - **Validates: Requirements 6.13**
 
@@ -456,7 +456,7 @@ For EVERY task below:
     - Support export via dashboard for premium guilds
     - _Requirements: 6.18, 6.20_
 
-  - [ ]* 13.9 Write unit tests for giveaway system
+  - [ ] 13.9 Write unit tests for giveaway system
     - Test claim timeout handling
     - Test reroll logic
     - Test manual reroll
@@ -496,7 +496,7 @@ For EVERY task below:
     - Download giveaway history as CSV/JSON
     - _Requirements: 6.20, 14.8_
 
-  - [ ]* 14.6 Write unit tests for giveaway dashboard
+  - [ ] 14.6 Write unit tests for giveaway dashboard
     - Test form validation
     - Test API integration
     - Test premium feature gating
@@ -522,7 +522,7 @@ For EVERY task below:
     - Batch XP updates to PostgreSQL every 5 minutes
     - _Requirements: 7.1, 7.2, 7.4, 7.9_
 
-  - [ ]* 16.2 Write property test for XP cooldown enforcement
+  - [ ] 16.2 Write property test for XP cooldown enforcement
     - **Property 17: XP Cooldown Enforcement**
     - **Validates: Requirements 7.1**
 
@@ -533,7 +533,7 @@ For EVERY task below:
     - Only award XP when all conditions met
     - _Requirements: 7.3_
 
-  - [ ]* 16.4 Write unit tests for voice XP validation
+  - [ ] 16.4 Write unit tests for voice XP validation
     - Test muted user scenarios
     - Test deafened user scenarios
     - Test alone in channel scenario
@@ -546,11 +546,11 @@ For EVERY task below:
     - Send level-up notification to configured channel
     - _Requirements: 7.5, 7.6, 7.7_
 
-  - [ ]* 16.6 Write property test for level-up threshold detection
+  - [ ] 16.6 Write property test for level-up threshold detection
     - **Property 18: Level-Up Threshold Detection**
     - **Validates: Requirements 7.5**
 
-  - [ ]* 16.7 Write property test for XP synchronization consistency
+  - [ ] 16.7 Write property test for XP synchronization consistency
     - **Property 19: XP Synchronization Consistency**
     - **Validates: Requirements 7.9**
 
@@ -602,7 +602,7 @@ For EVERY task below:
     - Call POST/DELETE /api/guilds/:guildId/users/:userId/xp
     - _Requirements: 7.12, 14.3_
 
-  - [ ]* 17.5 Write unit tests for XP dashboard
+  - [ ] 17.5 Write unit tests for XP dashboard
     - Test leaderboard rendering
     - Test configuration updates
     - Test admin XP management
@@ -623,7 +623,7 @@ For EVERY task below:
     - Apply rate limiting (3 interactions per 10 seconds)
     - _Requirements: 8.2, 8.3_
 
-  - [ ]* 18.3 Write property test for component role toggle behavior
+  - [ ] 18.3 Write property test for component role toggle behavior
     - **Property 20: Component Role Toggle Behavior**
     - **Validates: Requirements 8.2**
 
@@ -639,7 +639,7 @@ For EVERY task below:
     - Handle cases where user left guild
     - _Requirements: 8.7, 8.8_
 
-  - [ ]* 18.6 Write unit tests for timed roles
+  - [ ] 18.6 Write unit tests for timed roles
     - Test role expiration
     - Test worker execution
     - Test premium gating
@@ -698,7 +698,7 @@ For EVERY task below:
     - Call POST/DELETE /api/guilds/:guildId/timed-roles
     - _Requirements: 14.7, 14.18_
 
-  - [ ]* 19.5 Write unit tests for role dashboard
+  - [ ] 19.5 Write unit tests for role dashboard
     - Test panel builder
     - Test auto-role configuration
     - Test timed roles (premium gating)
@@ -738,7 +738,7 @@ For EVERY task below:
     - Apply rate limiting to prevent spam
     - _Requirements: 9.5, 9.7, 9.9_
 
-  - [ ]* 21.4 Write property test for trigger keyword matching
+  - [ ] 21.4 Write property test for trigger keyword matching
     - **Property 22: Trigger Keyword Matching**
     - **Validates: Requirements 9.5**
 
@@ -753,7 +753,7 @@ For EVERY task below:
     - Execute stages in order
     - _Requirements: 9.8_
 
-  - [ ]* 21.7 Write unit tests for automation
+  - [ ] 21.7 Write unit tests for automation
     - Test scheduled message execution
     - Test reminder dispatch
     - Test trigger matching
@@ -765,7 +765,7 @@ For EVERY task below:
     - Implement duplicate detection
     - _Requirements: 9.12, 17.14_
 
-  - [ ]* 21.9 Write property test for idempotent job execution
+  - [ ] 21.9 Write property test for idempotent job execution
     - **Property 23: Idempotent Job Execution**
     - **Validates: Requirements 9.12, 17.14**
 
@@ -818,7 +818,7 @@ For EVERY task below:
     - Call POST /api/guilds/:guildId/workflows
     - _Requirements: 14.6, 14.18_
 
-  - [ ]* 22.6 Write unit tests for automation dashboard
+  - [ ] 22.6 Write unit tests for automation dashboard
     - Test scheduled message form
     - Test trigger configuration
     - Test workflow builder (premium gating)
@@ -854,7 +854,7 @@ For EVERY task below:
     - Add embed preview functionality
     - _Requirements: 11.7_
 
-  - [ ]* 23.5 Write unit tests for community features
+  - [ ] 23.5 Write unit tests for community features
     - Test welcome message variable substitution
     - Test suggestion voting
     - Test starboard threshold detection
@@ -905,7 +905,7 @@ For EVERY task below:
     - Save embed templates (Premium)
     - _Requirements: 14.7_
 
-  - [ ]* 24.5 Write unit tests for community dashboard
+  - [ ] 24.5 Write unit tests for community dashboard
     - Test welcome configuration
     - Test suggestion management
     - Test starboard configuration
@@ -953,11 +953,11 @@ For EVERY task below:
     - Apply rate limiting
     - _Requirements: 12.4, 12.5, 12.7, 12.9_
 
-  - [ ]* 26.5 Write property test for stream notification deduplication
+  - [ ] 26.5 Write property test for stream notification deduplication
     - **Property 24: Stream Notification Deduplication**
     - **Validates: Requirements 12.7**
 
-  - [ ]* 26.6 Write unit tests for streaming integrations
+  - [ ] 26.6 Write unit tests for streaming integrations
     - Test webhook signature validation
     - Test duplicate detection
     - Test rate limiting
@@ -1005,7 +1005,7 @@ For EVERY task below:
     - Show notification delivery status
     - _Requirements: 14.13_
 
-  - [ ]* 27.5 Write unit tests for streaming dashboard
+  - [ ] 27.5 Write unit tests for streaming dashboard
     - Test add streamer form
     - Test streamer configuration
     - Test platform validation
@@ -1026,7 +1026,7 @@ For EVERY task below:
     - Track usage in PostgreSQL
     - _Requirements: 13.2, 13.3_
 
-  - [ ]* 28.3 Write property test for rate limiting
+  - [ ] 28.3 Write property test for rate limiting
     - **Property 21: Rate Limiting Enforcement**
     - **Validates: Requirements 8.3, 13.2**
 
@@ -1049,7 +1049,7 @@ For EVERY task below:
     - Truncate context if needed
     - _Requirements: 13.6_
 
-  - [ ]* 28.7 Write property test for AI token limit enforcement
+  - [ ] 28.7 Write property test for AI token limit enforcement
     - **Property 25: AI Token Limit Enforcement**
     - **Validates: Requirements 13.6**
 
@@ -1077,7 +1077,7 @@ For EVERY task below:
     - Validate channel configuration before processing
     - _Requirements: 13.11_
 
-  - [ ]* 28.12 Write unit tests for AI system
+  - [ ] 28.12 Write unit tests for AI system
     - Test rate limiting
     - Test quota enforcement
     - Test timeout handling
@@ -1133,7 +1133,7 @@ For EVERY task below:
     - Call PATCH /api/guilds/:guildId/ai/config
     - _Requirements: 14.10_
 
-  - [ ]* 29.6 Write unit tests for AI dashboard
+  - [ ] 29.6 Write unit tests for AI dashboard
     - Test channel configuration
     - Test document upload (premium gating)
     - Test usage analytics
@@ -1179,7 +1179,7 @@ For EVERY task below:
     - Cache guild access in Redis
     - _Requirements: 14.3, 16.3, 16.10_
 
-  - [ ]* 31.5 Write property test for API guild ownership validation
+  - [ ] 31.5 Write property test for API guild ownership validation
     - **Property 28: API Guild Ownership Validation**
     - **Validates: Requirements 16.3**
 
@@ -1189,7 +1189,7 @@ For EVERY task below:
     - Return 400 errors for invalid input
     - _Requirements: 14.4, 19.7, 19.12_
 
-  - [ ]* 31.7 Write property test for SQL injection prevention
+  - [ ] 31.7 Write property test for SQL injection prevention
     - **Property 32: SQL Injection Prevention**
     - **Validates: Requirements 19.12**
 
@@ -1213,7 +1213,7 @@ For EVERY task below:
     - GET /api/guilds/:guildId/users/:userId/warnings - Get user warnings
     - _Requirements: 14.3, 14.4_
 
-  - [ ]* 31.11 Write unit tests for API endpoints
+  - [ ] 31.11 Write unit tests for API endpoints
     - Test authentication flow
     - Test permission validation
     - Test input validation
@@ -1235,7 +1235,7 @@ For EVERY task below:
     - Return upgrade message when premium expired
     - _Requirements: 15.1, 15.2, 15.3, 15.4_
 
-  - [ ]* 32.3 Write property test for premium feature access control
+  - [ ] 32.3 Write property test for premium feature access control
     - **Property 26: Premium Feature Access Control**
     - **Validates: Requirements 15.1, 15.3**
 
@@ -1263,7 +1263,7 @@ For EVERY task below:
     - Store logs for billing audit
     - _Requirements: 15.13_
 
-  - [ ]* 32.8 Write unit tests for premium system
+  - [ ] 32.8 Write unit tests for premium system
     - Test premium validation
     - Test feature gating
     - Test graceful downgrade
@@ -1350,7 +1350,7 @@ For EVERY task below:
     - Implement retry mechanisms
     - _Requirements: 14.16, 14.17_
 
-  - [ ]* 33.11 Write unit tests for dashboard foundation
+  - [ ] 33.11 Write unit tests for dashboard foundation
     - Test authentication flow
     - Test guild selection
     - Test navigation
@@ -1398,7 +1398,7 @@ For EVERY task below:
     - Call PATCH /api/guilds/:guildId/config
     - _Requirements: 5.7, 5.8, 14.6_
 
-  - [ ]* 34.6 Write unit tests for ticket system
+  - [ ] 34.6 Write unit tests for ticket system
     - Test ticket creation
     - Test transcript generation
     - Test auto-close
@@ -1461,7 +1461,7 @@ For EVERY task below:
     - Respect channel permissions
     - _Requirements: 10.12_
 
-  - [ ]* 36.9 Write unit tests for logging system
+  - [ ] 36.9 Write unit tests for logging system
     - Test all event type logging
     - Test log channel posting
     - Test log filtering
@@ -1491,7 +1491,7 @@ For EVERY task below:
     - Move failed jobs to dead-letter queue after max retries
     - _Requirements: 17.7, 21.4_
 
-  - [ ]* 37.4 Write property test for worker retry with exponential backoff
+  - [ ] 37.4 Write property test for worker retry with exponential backoff
     - **Property 29: Worker Job Retry with Exponential Backoff**
     - **Validates: Requirements 17.7, 21.4**
 
@@ -1511,7 +1511,7 @@ For EVERY task below:
     - Prevent resource exhaustion
     - _Requirements: 17.13_
 
-  - [ ]* 37.8 Write unit tests for worker system
+  - [ ] 37.8 Write unit tests for worker system
     - Test job execution
     - Test retry logic
     - Test timeout handling
@@ -1536,7 +1536,7 @@ For EVERY task below:
     - Validate guild context in all bot commands
     - _Requirements: 16.3, 16.4, 16.5_
 
-  - [ ]* 38.4 Write property test for guild data isolation
+  - [ ] 38.4 Write property test for guild data isolation
     - **Property 3: Guild Data Isolation**
     - **Validates: Requirements 1.9, 16.4**
 
@@ -1563,7 +1563,7 @@ For EVERY task below:
     - Prevent cross-guild information leakage
     - _Requirements: 16.12_
 
-  - [ ]* 38.9 Write unit tests for data isolation
+  - [ ] 38.9 Write unit tests for data isolation
     - Test cross-guild access prevention
     - Test Redis key namespacing
     - Test database query filtering
@@ -1590,7 +1590,7 @@ For EVERY task below:
     - Don't crash on Redis unavailability
     - _Requirements: 21.1_
 
-  - [ ]* 40.2 Write property test for graceful Redis failure handling
+  - [ ] 40.2 Write property test for graceful Redis failure handling
     - **Property 33: Graceful Redis Failure Handling**
     - **Validates: Requirements 21.1**
 
@@ -1629,7 +1629,7 @@ For EVERY task below:
     - Handle timeout errors gracefully
     - _Requirements: 21.12_
 
-  - [ ]* 40.9 Write unit tests for error handling
+  - [ ] 40.9 Write unit tests for error handling
     - Test Redis failure scenarios
     - Test database failure scenarios
     - Test external API failures
@@ -1676,11 +1676,11 @@ For EVERY task below:
     - Log performance metrics
     - _Requirements: 18.12_
 
-  - [ ]* 41.7 Write property test for concurrent command handling
+  - [ ] 41.7 Write property test for concurrent command handling
     - **Property 30: Concurrent Command Handling**
     - **Validates: Requirements 18.1**
 
-  - [ ]* 41.8 Write property test for command response time
+  - [ ] 41.8 Write property test for command response time
     - **Property 31: Command Response Time**
     - **Validates: Requirements 18.3**
 
@@ -1709,7 +1709,7 @@ For EVERY task below:
     - Revalidate role requirements before awarding
     - _Requirements: 19.15_
 
-  - [ ]* 42.5 Write unit tests for security controls
+  - [ ] 42.5 Write unit tests for security controls
     - Test input sanitization
     - Test webhook signature validation
     - Test role hierarchy enforcement
@@ -1894,3 +1894,4 @@ The tasks are organized into 11 phases that build incrementally with full-stack 
 11. **Phase 11**: Testing, documentation, deployment
 
 Each phase includes a checkpoint to verify progress before moving forward. Phases 4-8 implement features as complete full-stack vertical slices, ensuring dashboard UI is wired immediately when the backend is created. This ensures the system is built on a solid foundation with continuous validation and nothing is missed from the dashboard.
+
